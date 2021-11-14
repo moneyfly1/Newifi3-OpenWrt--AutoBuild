@@ -127,30 +127,30 @@ CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
 EOF
 
 # ShadowsocksR插件:
-#cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-ssr-plus=n
-#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=n
-#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=n
-#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=n
-#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=n
-#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=n
-#EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=n
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=n
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=n
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=n
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=n
+EOF
 
 # Passwall插件:
-#cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-passwall=y
-#CONFIG_PACKAGE_https-dns-proxy=y
-#CONFIG_PACKAGE_naiveproxy=y
-#CONFIG_PACKAGE_kcptun-client=y
-#CONFIG_PACKAGE_chinadns-ng=y
-#CONFIG_PACKAGE_brook=y
-#CONFIG_PACKAGE_trojan-go=y
-#CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-#EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_https-dns-proxy=y
+CONFIG_PACKAGE_naiveproxy=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_chinadns-ng=y
+CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_trojan-go=y
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
+EOF
 
 # 常用LuCI插件:
 cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-adbyby-plus=y #adbyby去广告
+CONFIG_PACKAGE_luci-app-adbyby-plus=y #adbyby去广告
 #CONFIG_PACKAGE_luci-app-guest-wifi=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 #CONFIG_PACKAGE_luci-app-easymesh=y
@@ -177,14 +177,14 @@ CONFIG_PACKAGE_luci-app-watchcat=y
 CONFIG_PACKAGE_luci-app-turboacc=y #开源 Linux Flow Offload 驱动
 #CONFIG_PACKAGE_luci-app-haproxy-tcp is not set #Haproxy负载均衡
 #CONFIG_PACKAGE_luci-app-diskman is not set #磁盘管理磁盘信息
-#CONFIG_PACKAGE_luci-app-transmission is not set #TR离线下载
+CONFIG_PACKAGE_luci-app-transmission is not set #TR离线下载
 #CONFIG_PACKAGE_luci-app-qbittorrent is not set #QB离线下载
 #CONFIG_PACKAGE_luci-app-amule is not set #电驴离线下载
 #CONFIG_PACKAGE_luci-app-xlnetacc is not set #迅雷快鸟
 #CONFIG_PACKAGE_luci-app-zerotier is not set #zerotier内网穿透
 #CONFIG_PACKAGE_luci-app-hd-idle is not set #磁盘休眠
 #CONFIG_PACKAGE_luci-app-wrtbwmon is not set #实时流量监测
-#CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
+CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
 #CONFIG_PACKAGE_luci-app-unblockneteasemusic=y 
 #CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_NodeJS=y
 #CONFIG_PACKAGE_luci-app-unblockmusic_INCLUDE_UnblockNeteaseMusic_Go=y
