@@ -128,12 +128,12 @@ EOF
 
 # ShadowsocksR插件:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-ssr-plus=n
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=n
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=n
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=n
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=n
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=n
+CONFIG_PACKAGE_luci-app-ssr-plus=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
 EOF
 
 # Passwall插件:
@@ -195,7 +195,7 @@ CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
 #
 # VPN相关插件(禁用):
 #
-# CONFIG_PACKAGE_luci-app-v2ray-server is not set #V2ray服务器
+CONFIG_PACKAGE_luci-app-v2ray-server is not set #V2ray服务器
 # CONFIG_PACKAGE_luci-app-pptp-server is not set #PPTP VPN 服务器
 # CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set #ipsec VPN服务
 # CONFIG_PACKAGE_luci-app-openvpn-server is not set #openvpn服务
