@@ -23,33 +23,33 @@ cat feeds.conf.default
 #rm -rf ./package/lean/luci-app-unblockmusic
 
 # 添加第三方软件包
-#git clone https://github.com/gbaoye/openwrt-packages package/openwrt-packages
-#git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
-#git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-#git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
-#git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge
+git clone https://github.com/gbaoye/openwrt-packages package/openwrt-packages
+git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
+git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
+git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge
 git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
-#git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
-#git clone https://github.com/hubbylei/luci-app-clash package/luci-app-clash
-#git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
-#git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclash package/luci-app-openclash
+git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
+git clone https://github.com/hubbylei/luci-app-clash package/luci-app-clash
+git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclash package/luci-app-openclash
 
 # 下载自定义软件
-#svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-clash ../package/luci-app-clash
-#svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclash ../package/luci-app-openclash
+svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-clash ../package/luci-app-clash
+svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclash ../package/luci-app-openclash
 
 # 替换更新插件
-#rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
-#rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
-#rm -rf package/openwrt-packages/adguardhome && svn co https://github.com/Lienol/openwrt/tree/dev-19.07/package/diy/adguardhome package/openwrt-packages/adguardhome
-#rm -rf package/openwrt-packages/luci-app-adguardhome && svn co https://github.com/kongfl888/luci-app-adguardhome package/openwrt-packages/luci-app-adguardhome
-#rm -rf package/openwrt-packages/luci-app-clash && svn co https://github.com/frainzy1477/luci-app-clash package/openwrt-packages/luci-app-clash
+rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
+rm -rf package/openwrt-packages/adguardhome && svn co https://github.com/Lienol/openwrt/tree/dev-19.07/package/diy/adguardhome package/openwrt-packages/adguardhome
+rm -rf package/openwrt-packages/luci-app-adguardhome && svn co https://github.com/kongfl888/luci-app-adguardhome package/openwrt-packages/luci-app-adguardhome
+rm -rf package/openwrt-packages/luci-app-clash && svn co https://github.com/frainzy1477/luci-app-clash package/openwrt-packages/luci-app-clash
 
 # 添加passwall依赖库
-#git clone https://github.com/kenzok8/small package/small
-#svn co https://github.com/Lienol/openwrt-package/tree/master/package package/small
+git clone https://github.com/kenzok8/small package/small
+svn co https://github.com/Lienol/openwrt-package/tree/master/package package/small
 # 替换更新haproxy默认版本
-#rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-packages/net/haproxy feeds/packages/net/haproxy
+rm -rf feeds/packages/net/haproxy && svn co https://github.com/Lienol/openwrt-packages/net/haproxy feeds/packages/net/haproxy
 # 自定义定制选项
 sed -i 's#192.168.1.1#10.1.0.1#g' package/base-files/files/bin/config_generate #定制默认IP
 #sed -i 's#max-width:200px#max-width:1000px#g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm #修改首页样式
