@@ -154,16 +154,16 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=n
 EOF
 
 # Passwall插件:
-#cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-passwall=y
-#CONFIG_PACKAGE_https-dns-proxy=y
-#CONFIG_PACKAGE_naiveproxy=y
-#CONFIG_PACKAGE_kcptun-client=y
-#CONFIG_PACKAGE_chinadns-ng=y
-#CONFIG_PACKAGE_brook=y
-#CONFIG_PACKAGE_trojan-go=y
-#CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-#EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_https-dns-proxy=y
+CONFIG_PACKAGE_naiveproxy=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_chinadns-ng=y
+CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_trojan-go=y
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
+EOF
 
 # 常用LuCI插件:
 cat >> .config <<EOF
@@ -231,11 +231,11 @@ EOF
 # LuCI主题:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-theme-atmaterial=y
-#CONFIG_PACKAGE_luci-theme-bootstrap=y
-#CONFIG_PACKAGE_luci-theme-argon_new=y
-#CONFIG_PACKAGE_luci-theme-argon
-#CONFIG_PACKAGE_luci-theme-netgear=y
-#CONFIG_PACKAGE_luci-theme-edge=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci-theme-argon_new=y
+CONFIG_PACKAGE_luci-theme-argon
+CONFIG_PACKAGE_luci-theme-netgear=y
+CONFIG_PACKAGE_luci-theme-edge=y
 CONFIG_PACKAGE_luci-theme-material=y
 EOF
 
