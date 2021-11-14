@@ -40,10 +40,10 @@ svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclas
 
 # 替换更新插件
 rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
-rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
+#rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
 rm -rf package/openwrt-packages/adguardhome && svn co https://github.com/Lienol/openwrt/tree/dev-19.07/package/diy/adguardhome package/openwrt-packages/adguardhome
 rm -rf package/openwrt-packages/luci-app-adguardhome && svn co https://github.com/kongfl888/luci-app-adguardhome package/openwrt-packages/luci-app-adguardhome
-rm -rf package/openwrt-packages/luci-app-clash && svn co https://github.com/frainzy1477/luci-app-clash package/openwrt-packages/luci-app-clash
+#rm -rf package/openwrt-packages/luci-app-clash && svn co https://github.com/frainzy1477/luci-app-clash package/openwrt-packages/luci-app-clash
 
 # 添加passwall依赖库
 git clone https://github.com/kenzok8/small package/small
@@ -127,14 +127,14 @@ CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
 EOF
 
 # ShadowsocksR插件:
-cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-ssr-plus=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-EOF
+#cat >> .config <<EOF
+#CONFIG_PACKAGE_luci-app-ssr-plus=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+#EOF
 
 # Passwall插件:
 cat >> .config <<EOF
